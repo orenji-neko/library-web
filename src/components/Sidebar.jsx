@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 
 function Sidebar() {
   return (
@@ -38,18 +39,21 @@ function Sidebar() {
               Borrow Books
             </a>
           </li>
+          
           <hr className="border-black" />
           <li className="group rounded py-2 hover:bg-teal-200">
-            <a href="#" className="flex items-center px-3 group-hover:text-black">
+            <Link to="/History" className="flex items-center px-3 group-hover:text-black">
               <img 
                 src="/rebook-images/clock1.png" 
                 alt="History" 
                 className="inline-block w-6 h-6 mr-2"
               />
               History
-            </a>
+            </Link>
           </li>
           <hr className="border-black" />
+
+
           <li className="group rounded py-2 hover:bg-teal-200">
             <a href="#" className="flex items-center px-3 group-hover:text-black">
               <img 
